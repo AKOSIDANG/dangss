@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavor Fusion Bistro - Orders</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📦 Your Orders</h1>
+    <nav>
+        <!-- Hamburger button -->
+  <button class="menu-toggle">☰</button>
+
+  <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="main.html">Menu</a>
+      <a href="order.html">View Orders</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <section class="orders">
+    <h2>Recent Orders</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="orderList">
+        <!-- Orders will be added here by JavaScript -->
+      </tbody>
+    </table>
+  </section>
+  <div style="text-align:center; margin:20px;">
+    <button id="clearOrders" class="btn">Clear All Orders</button>
+  </div>
+  <footer>
+    <p>© 2025 Flavor Fusion Bistro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+    <script src="js/script2.js"></script>
+
+</body>
+</html>
