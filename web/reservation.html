@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavor Fusion Bistro - Reservation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Flavor Fusion Bistro</h1>
+    <button class="menu-toggle">☰</button>
+    <nav class="nav-links">
+       <a href="index.html">Home</a>
+      <a href="main.html">Menu</a>
+      <a href="order.html">View Orders</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main class="reservation-container">
+    <h2>Reserve a Table</h2>
+    <p>Please fill out the form below to book a reservation with us.</p>
+
+    <form class="reservation-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+      <button type="submit" class="btn">Book Reservation</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Food Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script2.js">
+
+    document.querySelector('.reservation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Your reservation has been submitted! We will contact you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
